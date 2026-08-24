@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Çayeli Fırın</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <style>
+    body {
+      background: #fffaf5;
+      color: #3d2b20;
+    }
+
+    .navbar {
+      background: #fff;
+    }
+
+    .logo {
+      width: 55px;
+      height: 55px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .hero {
+      background: #f4dfc8;
+      border-radius: 25px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.3rem, 5vw, 4.5rem);
+    }
+
+    .section-title {
+      color: #9b4d22;
+    }
+
+    .card {
+      border: 0;
+      border-radius: 18px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .icon {
+      font-size: 2rem;
+      color: #9b4d22;
+    }
+
+    .address-link {
+      color: #3d2b20;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .address-link:hover {
+      color: #9b4d22;
+      text-decoration: underline;
+    }
+
+    .map-buttons a {
+      margin: 4px;
+    }
+
+    footer {
+      background: #3d2b20;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg shadow-sm sticky-top">
+  <div class="container">
+
+    <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="#">
+      <img src="Görsel.jpeg"
+           class="logo"
+           alt="Çayeli Fırın Logo">
+      <span>Çayeli Fırın</span>
+    </a>
+
+    <button class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="#anasayfa">Anasayfa</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#urunler">Ürünler</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#hakkimizda">Hakkımızda</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#iletisim">İletişim</a>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+
+<!-- HERO -->
+<section id="anasayfa" class="container my-5">
+
+  <div class="hero p-4 p-lg-5">
+
+    <div class="row align-items-center">
+
+      <div class="col-lg-7">
+
+        <p class="fw-bold section-title mb-2">
+          GELENEKTEN GELEN LEZZET
+        </p>
+
+        <h1 class="fw-bold">
+          Her gün sıcak,<br>
+          her gün taze.
+        </h1>
+
+        <p class="lead">
+          Çayeli Fırın olarak günlük hazırlanan ekmeklerimiz,
+          poğaçalarımız, tatlılarımız, galetalarımız ve
+          şarküteri ürünlerimizle sofralarınıza sıcaklık katıyoruz.
+        </p>
+
+        <a href="#urunler" class="btn btn-dark px-4 py-2">
+          Ürünlerimizi Gör
+        </a>
+
+      </div>
+
+      <div class="col-lg-5 text-center mt-4 mt-lg-0">
+
+        <img src="Görsel.jpeg"
+             class="img-fluid rounded-4"
+             style="max-height:300px"
+             alt="Çayeli Fırın">
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ÜRÜNLER -->
+<section id="urunler" class="container py-5">
+
+  <h2 class="text-center fw-bold section-title">
+    Ürünlerimiz
+  </h2>
+
+  <p class="text-center mb-4">
+    Günün her saatinde taze ve sıcak lezzetler.
+  </p>
+
+
+  <div class="row g-4">
+
+
+    <!-- TAZE EKMEK -->
+    <div class="col-md-4">
+      <div class="card bg-white shadow-sm p-4 text-center h-100">
+
+        <i class="bi bi-basket icon"></i>
+
+        <h4 class="mt-3">
+          Taze Ekmek
+        </h4>
+
+        <p>
+          Her gün özenle hazırlanan sıcak ve çıtır ekmekler.
+        </p>
+
+      </div>
+    </div>
+
+
+    <!-- POĞAÇA -->
+    <div class="col-md-4">
+      <div class="card bg-white shadow-sm p-4 text-center h-100">
+
+        <i class="bi bi-cup-hot icon"></i>
+
+        <h4 class="mt-3">
+          Poğaça & Açma
+        </h4>
+
+        <p>
+          Kahvaltıların vazgeçilmezi, günlük hazırlanan lezzetler.
+        </p>
+
+      </div>
+    </div>
+
+
+    <!-- TATLILAR -->
+    <div class="col-md-4">
+      <div class="card bg-white shadow-sm p-4 text-center h-100">
+
+        <i class="bi bi-cake2 icon"></i>
+
+        <h4 class="mt-3">
+          Tatlılar
+        </h4>
+
+        <p>
+          Çayın yanında keyifle tüketebileceğiniz tatlı seçenekleri.
+        </p>
+
+      </div>
+    </div>
+
+
+    <!-- NOHUT EKŞİLİ EKMEK -->
+    <div class="col-md-4">
+      <div class="card bg-white shadow-sm p-4 text-center h-100">
+
+        <i class="bi bi-stars icon"></i>
+
+        <h4 class="mt-3">
+          Nohut Ekşisi Ekşi Mayalı Özel Ekmeğimiz
+        </h4>
+
+        <p>
+          Nohut ekşisi ile hazırlanan, kendine özgü aroması ve
+          geleneksel lezzetiyle öne çıkan özel ekşi mayalı ekmeğimiz.
+        </p>
+
+      </div>
+    </div>
+
+
+    <!-- ŞARKÜTERİ -->
+    <div class="col-md-4">
+      <div class="card bg-white shadow-sm p-4 text-center h-100">
+
+        <i class="bi bi-shop icon"></i>
+
+        <h4 class="mt-3">
+          Şarküteri Ürünleri
+        </h4>
+
+        <p>
+          Kahvaltı ve sofralarınız için özenle seçilmiş
+          kaliteli şarküteri ürünlerimizi keşfedin.
+        </p>
+
+      </div>
+    </div>
+
+
+    <!-- GALETA -->
+    <div class="col-md-4">
+      <div class="card bg-white shadow-sm p-4 text-center h-100">
+
+        <i class="bi bi-cookie icon"></i>
+
+        <h4 class="mt-3">
+          Galeta Ürünleri
+        </h4>
+
+        <p>
+          Sütlü, çekirdekli, susamlı ve kepekli seçenekleriyle;
+          hafif, ağızda dağılan, çıtır ve sindirimi kolay
+          galeta ürünleri.
+        </p>
+
+      </div>
+    </div>
+
+
+  </div>
+
+</section>
+
+
+<!-- HAKKIMIZDA -->
+<section id="hakkimizda" class="container py-5">
+
+  <div class="bg-white shadow-sm rounded-4 p-4 p-lg-5">
+
+    <div class="row align-items-center">
+
+      <div class="col-lg-8">
+
+        <h2 class="fw-bold section-title">
+          Çayeli Fırın
+        </h2>
+
+        <p>
+          Çayeli Fırın, geleneksel fırıncılık anlayışını günlük tazelik
+          ve kaliteli ürünlerle buluşturmayı amaçlayan sıcak bir mahalle
+          fırınıdır.
+
+          Sabahın erken saatlerinden itibaren hazırlanan ürünlerimizi
+          sizlere taze ve özenli şekilde sunuyoruz.
+        </p>
+
+        <p class="mb-0 fw-semibold">
+          “Sofranızın sıcaklığı, fırınımızın tazeliğiyle başlar.”
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- İLETİŞİM -->
+<section id="iletisim" class="container py-5">
+
+  <h2 class="text-center fw-bold section-title">
+    Bize Ulaşın
+  </h2>
+
+  <div class="row justify-content-center mt-4">
+
+    <div class="col-md-6">
+
+      <div class="bg-white shadow-sm rounded-4 p-4">
+
+
+        <!-- ADRES -->
+        <p>
+
+          <i class="bi bi-geo-alt-fill me-2"></i>
+
+          <strong>Adres:</strong>
+          <br>
+
+          <a
+            class="address-link"
+            href="https://www.google.com/maps/dir/?api=1&destination=Atatürk+Mah.+Turgut+Özal+Bulvarı+Cad.+No%3A12+Büyükçekmece+İstanbul"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            Atatürk Mah. Turgut Özal Bulvarı Cad. No:12
+            Büyükçekmece / İstanbul
+
+          </a>
+
+        </p>
+
+
+        <!-- HARİTA BUTONLARI -->
+        <div class="map-buttons text-center mb-4">
+
+          <a
+            href="https://www.google.com/maps/dir/?api=1&destination=Atatürk+Mah.+Turgut+Özal+Bulvarı+Cad.+No%3A12+Büyükçekmece+İstanbul"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-outline-dark btn-sm">
+
+            <i class="bi bi-google"></i>
+            Google Haritalar'da Yol Tarifi
+
+          </a>
+
+
+          <a
+            href="https://maps.apple.com/?address=Atatürk%20Mah.%20Turgut%20Özal%20Bulvarı%20Cad.%20No%3A12%20Büyükçekmece%2Fİstanbul"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-outline-dark btn-sm">
+
+            <i class="bi bi-apple"></i>
+            Apple Haritalar'da Yol Tarifi
+
+          </a>
+
+        </div>
+
+
+        <!-- TELEFON -->
+        <p>
+
+          <i class="bi bi-telephone-fill me-2"></i>
+
+          <strong>Telefon:</strong>
+          <br>
+
+          <a
+            href="tel:05362038433"
+            class="text-decoration-none text-dark">
+
+            0536 203 84 33
+
+          </a>
+
+        </p>
+
+
+        <!-- ÇALIŞMA SAATLERİ -->
+        <p class="mb-0">
+
+          <i class="bi bi-clock-fill me-2"></i>
+
+          <strong>Çalışma Saatleri:</strong>
+          <br>
+
+          Her gün 06:00 - 00:00
+
+        </p>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer class="text-center py-4">
+
+  <h4>
+    Çayeli Fırın
+  </h4>
+
+  <p class="mb-1">
+    Her gün sıcak, her gün taze.
+  </p>
+
+  <small>
+    © 2026 Çayeli Fırın
+  </small>
+
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
